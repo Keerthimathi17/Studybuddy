@@ -1,0 +1,1830 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudyBuddy | Learn Together</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="toastContainer"></div>
+
+<!-- =========================
+     LANDING PAGE
+========================= -->
+
+<section id="landingPage" class="page active">
+
+    <nav class="landing-nav">
+
+        <div class="brand">
+            <div class="brand-logo">
+                <i class="fa-solid fa-book-open"></i>
+            </div>
+
+            <div>
+                <h2>Study<span>Buddy</span></h2>
+                <small>Learn together. Grow together.</small>
+            </div>
+        </div>
+
+        <div class="landing-links">
+            <a href="#features">Features</a>
+            <a href="#how">How it works</a>
+            <a href="#about">About</a>
+        </div>
+
+        <div class="landing-actions">
+            <button class="btn btn-outline" onclick="showAuth('login')">
+                Log in
+            </button>
+
+            <button class="btn btn-primary" onclick="showAuth('register')">
+                Get Started
+            </button>
+        </div>
+
+    </nav>
+
+
+    <main class="hero">
+
+        <div class="hero-content">
+
+            <div class="hero-badge">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                Your campus learning community
+            </div>
+
+            <h1>
+                Don't study alone.
+                <span>Find your StudyBuddy.</span>
+            </h1>
+
+            <p>
+                Discover classmates, create study groups,
+                plan sessions and make learning more social,
+                productive and enjoyable.
+            </p>
+
+            <div class="hero-actions">
+
+                <button class="btn btn-primary btn-large"
+                        onclick="showAuth('register')">
+                    <i class="fa-solid fa-rocket"></i>
+                    Start Learning
+                </button>
+
+                <button class="btn btn-soft btn-large"
+                        onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">
+                    <i class="fa-solid fa-play"></i>
+                    Explore StudyBuddy
+                </button>
+
+            </div>
+
+            <div class="hero-points">
+
+                <span>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Find compatible buddies
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Build study groups
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Track your progress
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-visual">
+
+            <div class="floating-card floating-one">
+                <div class="float-icon purple">
+                    <i class="fa-solid fa-user-group"></i>
+                </div>
+
+                <div>
+                    <strong>Study Buddies</strong>
+                    <small>Connect & learn</small>
+                </div>
+            </div>
+
+
+            <div class="hero-dashboard">
+
+                <div class="mock-top">
+                    <div class="mock-logo">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+
+                    <div class="mock-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Search buddies...
+                    </div>
+
+                    <div class="mock-avatar">S</div>
+                </div>
+
+
+                <div class="mock-content">
+
+                    <div class="mock-sidebar">
+
+                        <div class="mock-nav active">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+
+                        <div class="mock-nav">
+                            <i class="fa-solid fa-user-group"></i>
+                        </div>
+
+                        <div class="mock-nav">
+                            <i class="fa-solid fa-people-group"></i>
+                        </div>
+
+                        <div class="mock-nav">
+                            <i class="fa-solid fa-calendar"></i>
+                        </div>
+
+                    </div>
+
+
+                    <div class="mock-main">
+
+                        <div class="mock-heading">
+                            <div>
+                                <small>WELCOME BACK 👋</small>
+                                <h3>Ready to learn?</h3>
+                            </div>
+
+                            <div class="streak">
+                                🔥 7 days
+                            </div>
+                        </div>
+
+
+                        <div class="mock-stats">
+
+                            <div class="mock-stat purple-card">
+                                <i class="fa-solid fa-users"></i>
+                                <small>Buddies</small>
+                                <strong>24</strong>
+                            </div>
+
+                            <div class="mock-stat blue-card">
+                                <i class="fa-solid fa-people-group"></i>
+                                <small>Groups</small>
+                                <strong>8</strong>
+                            </div>
+
+                            <div class="mock-stat orange-card">
+                                <i class="fa-solid fa-clock"></i>
+                                <small>Study time</small>
+                                <strong>18h</strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="mock-title">
+                            Recommended Buddies
+                        </div>
+
+
+                        <div class="mock-users">
+
+                            <div class="mock-user">
+                                <div class="avatar purple-avatar">A</div>
+
+                                <div>
+                                    <strong>Arun Raj</strong>
+                                    <small>Java • DSA</small>
+                                </div>
+
+                                <button>+</button>
+                            </div>
+
+                            <div class="mock-user">
+                                <div class="avatar pink-avatar">S</div>
+
+                                <div>
+                                    <strong>Sneha M</strong>
+                                    <small>DBMS • Python</small>
+                                </div>
+
+                                <button>+</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="floating-card floating-two">
+
+                <div class="float-icon orange">
+                    <i class="fa-solid fa-fire"></i>
+                </div>
+
+                <div>
+                    <strong>7 Day Streak 🔥</strong>
+                    <small>Keep going!</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- FEATURES -->
+
+    <section id="features" class="landing-section">
+
+        <div class="section-heading">
+            <span>EVERYTHING YOU NEED</span>
+
+            <h2>
+                Make studying
+                <strong>social & productive.</strong>
+            </h2>
+
+            <p>
+                One place to find people, organize learning
+                and stay motivated.
+            </p>
+        </div>
+
+
+        <div class="feature-grid">
+
+            <div class="feature-card feature-purple">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-user-group"></i>
+                </div>
+
+                <h3>Find Study Buddies</h3>
+
+                <p>
+                    Discover students who study the same
+                    subjects and share your goals.
+                </p>
+
+                <span>
+                    Connect with people
+                    <i class="fa-solid fa-arrow-right"></i>
+                </span>
+            </div>
+
+
+            <div class="feature-card feature-blue">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-people-group"></i>
+                </div>
+
+                <h3>Create Study Groups</h3>
+
+                <p>
+                    Create focused groups for exams,
+                    assignments and projects.
+                </p>
+
+                <span>
+                    Learn together
+                    <i class="fa-solid fa-arrow-right"></i>
+                </span>
+            </div>
+
+
+            <div class="feature-card feature-orange">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-calendar-days"></i>
+                </div>
+
+                <h3>Plan Study Sessions</h3>
+
+                <p>
+                    Organize your study schedule and
+                    never forget an important session.
+                </p>
+
+                <span>
+                    Plan smarter
+                    <i class="fa-solid fa-arrow-right"></i>
+                </span>
+            </div>
+
+
+            <div class="feature-card feature-green">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+
+                <h3>Track Your Progress</h3>
+
+                <p>
+                    Follow your study activity, sessions,
+                    groups and learning streak.
+                </p>
+
+                <span>
+                    Improve every day
+                    <i class="fa-solid fa-arrow-right"></i>
+                </span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- HOW IT WORKS -->
+
+    <section id="how" class="how-section">
+
+        <div class="section-heading">
+
+            <span>HOW IT WORKS</span>
+
+            <h2>
+                From studying alone to
+                <strong>learning together.</strong>
+            </h2>
+
+        </div>
+
+
+        <div class="steps">
+
+            <div class="step-card">
+                <div class="step-number">01</div>
+
+                <div class="step-icon">
+                    <i class="fa-solid fa-user-plus"></i>
+                </div>
+
+                <h3>Create your profile</h3>
+
+                <p>
+                    Create your StudyBuddy account and
+                    tell us who you are.
+                </p>
+            </div>
+
+
+            <div class="step-arrow">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+
+
+            <div class="step-card">
+                <div class="step-number">02</div>
+
+                <div class="step-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <h3>Find your people</h3>
+
+                <p>
+                    Discover students and groups that
+                    match your learning interests.
+                </p>
+            </div>
+
+
+            <div class="step-arrow">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+
+
+            <div class="step-card">
+                <div class="step-number">03</div>
+
+                <div class="step-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+
+                <h3>Learn together</h3>
+
+                <p>
+                    Join groups, schedule sessions and
+                    achieve your goals.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section id="about" class="about-section">
+
+        <div class="about-text">
+
+            <span>WHY STUDYBUDDY?</span>
+
+            <h2>
+                Learning becomes better
+                <strong>when we do it together.</strong>
+            </h2>
+
+            <p>
+                Whether you are preparing for an exam,
+                working on a project or trying to understand
+                a difficult subject, StudyBuddy helps you
+                find students to learn with.
+            </p>
+
+
+            <div class="about-list">
+
+                <div>
+                    <i class="fa-solid fa-check"></i>
+                    <span>Connect with students</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-check"></i>
+                    <span>Create subject-based groups</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-check"></i>
+                    <span>Organize collaborative learning</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-check"></i>
+                    <span>Stay motivated together</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="about-art">
+
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+
+            <div class="about-center">
+                <div class="about-book">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+
+                <h3>Better together</h3>
+
+                <p>
+                    Share knowledge.<br>
+                    Ask questions.<br>
+                    Build friendships.
+                </p>
+
+                <div class="about-people">
+                    <span>AK</span>
+                    <span>SM</span>
+                    <span>RJ</span>
+                    <span>PK</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="final-cta">
+
+        <span>READY TO START?</span>
+
+        <h2>
+            Your next study partner
+            could be one click away.
+        </h2>
+
+        <button class="btn btn-white btn-large"
+                onclick="showAuth('register')">
+            Join StudyBuddy
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </section>
+
+
+    <footer>
+        <div class="brand">
+            <div class="brand-logo">
+                <i class="fa-solid fa-book-open"></i>
+            </div>
+
+            <div>
+                <h2>Study<span>Buddy</span></h2>
+                <small>Learn together. Grow together.</small>
+            </div>
+        </div>
+
+        <p>© 2026 StudyBuddy. Built for students.</p>
+    </footer>
+
+</section>
+
+
+<!-- =========================
+     AUTH PAGE
+========================= -->
+
+<section id="authPage" class="page auth-page">
+
+    <div class="auth-showcase">
+
+        <div class="auth-brand">
+            <div class="brand-logo">
+                <i class="fa-solid fa-book-open"></i>
+            </div>
+
+            <h2>Study<span>Buddy</span></h2>
+        </div>
+
+        <div class="auth-showcase-content">
+
+            <span>WELCOME TO STUDYBUDDY</span>
+
+            <h1>
+                Learn together.
+                <strong>Achieve together.</strong>
+            </h1>
+
+            <p>
+                Connect with students, create groups and
+                make your learning journey more enjoyable.
+            </p>
+
+            <div class="auth-check">
+                <div>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Find compatible study buddies
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Create collaborative groups
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Track your learning journey
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="auth-panel">
+
+        <button class="back-home" onclick="showPage('landingPage')">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back to home
+        </button>
+
+
+        <!-- LOGIN -->
+
+        <div id="loginForm" class="auth-form">
+
+            <span>WELCOME BACK</span>
+
+            <h2>Log in to StudyBuddy</h2>
+
+            <p>Continue your learning journey.</p>
+
+
+            <form onsubmit="loginUser(event)">
+
+                <label>Email</label>
+
+                <div class="input-box">
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <input id="loginEmail"
+                           type="email"
+                           placeholder="Enter your email"
+                           required>
+                </div>
+
+
+                <label>Password</label>
+
+                <div class="input-box">
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input id="loginPassword"
+                           type="password"
+                           placeholder="Enter your password"
+                           required>
+
+                    <button type="button"
+                            onclick="togglePassword('loginPassword',this)">
+                        <i class="fa-solid fa-eye"></i>
+                    </button>
+                </div>
+
+
+                <button class="btn btn-primary auth-button">
+                    Log In
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </form>
+
+
+            <div class="auth-switch">
+                Don't have an account?
+
+                <button onclick="showAuth('register')">
+                    Create one
+                </button>
+            </div>
+
+        </div>
+
+
+        <!-- REGISTER -->
+
+        <div id="registerForm" class="auth-form hidden">
+
+            <span>GET STARTED</span>
+
+            <h2>Create your account</h2>
+
+            <p>Join your campus learning community.</p>
+
+
+            <form onsubmit="registerUser(event)">
+
+                <label>Full Name</label>
+
+                <div class="input-box">
+                    <i class="fa-solid fa-user"></i>
+
+                    <input id="registerName"
+                           type="text"
+                           placeholder="Enter your name"
+                           required>
+                </div>
+
+
+                <label>Email</label>
+
+                <div class="input-box">
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <input id="registerEmail"
+                           type="email"
+                           placeholder="Enter your email"
+                           required>
+                </div>
+
+
+                <label>Password</label>
+
+                <div class="input-box">
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input id="registerPassword"
+                           type="password"
+                           placeholder="Create a password"
+                           minlength="6"
+                           required>
+
+                    <button type="button"
+                            onclick="togglePassword('registerPassword',this)">
+                        <i class="fa-solid fa-eye"></i>
+                    </button>
+                </div>
+
+
+                <button class="btn btn-primary auth-button">
+                    Create Account
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </form>
+
+
+            <div class="auth-switch">
+                Already have an account?
+
+                <button onclick="showAuth('login')">
+                    Log in
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     APPLICATION
+========================= -->
+
+<section id="appPage" class="page app-page">
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-brand">
+
+            <div class="brand-logo">
+                <i class="fa-solid fa-book-open"></i>
+            </div>
+
+            <div>
+                <h2>Study<span>Buddy</span></h2>
+                <small>Student community</small>
+            </div>
+
+        </div>
+
+
+        <div class="sidebar-user">
+
+            <div class="user-avatar" id="sidebarAvatar">
+                S
+            </div>
+
+            <div>
+                <strong id="sidebarName">Student</strong>
+                <small id="sidebarEmail">student@email.com</small>
+            </div>
+
+        </div>
+
+
+        <div class="menu-label">MAIN MENU</div>
+
+
+        <nav>
+
+            <button class="sidebar-link active"
+                    data-page="dashboard"
+                    onclick="navigateApp('dashboard')">
+
+                <i class="fa-solid fa-house"></i>
+                <span>Dashboard</span>
+
+            </button>
+
+
+            <button class="sidebar-link"
+                    data-page="students"
+                    onclick="navigateApp('students')">
+
+                <i class="fa-solid fa-user-group"></i>
+                <span>Find Buddies</span>
+
+                <b id="studentCountBadge">0</b>
+
+            </button>
+
+
+            <button class="sidebar-link"
+                    data-page="groups"
+                    onclick="navigateApp('groups')">
+
+                <i class="fa-solid fa-people-group"></i>
+                <span>Study Groups</span>
+
+            </button>
+
+
+            <button class="sidebar-link"
+                    data-page="subjects"
+                    onclick="navigateApp('subjects')">
+
+                <i class="fa-solid fa-book"></i>
+                <span>Subjects</span>
+
+            </button>
+
+
+            <button class="sidebar-link"
+                    data-page="sessions"
+                    onclick="navigateApp('sessions')">
+
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>Study Sessions</span>
+
+            </button>
+
+        </nav>
+
+
+        <div class="menu-label">YOUR SPACE</div>
+
+
+        <nav>
+
+            <button class="sidebar-link"
+                    data-page="progress"
+                    onclick="navigateApp('progress')">
+
+                <i class="fa-solid fa-chart-line"></i>
+                <span>My Progress</span>
+
+            </button>
+
+
+            <button class="sidebar-link"
+                    data-page="notifications"
+                    onclick="navigateApp('notifications')">
+
+                <i class="fa-solid fa-bell"></i>
+                <span>Notifications</span>
+
+                <em id="notificationDot"></em>
+
+            </button>
+
+
+            <button class="sidebar-link"
+                    data-page="profile"
+                    onclick="navigateApp('profile')">
+
+                <i class="fa-solid fa-user"></i>
+                <span>My Profile</span>
+
+            </button>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="study-tip">
+
+                <div>
+                    <i class="fa-solid fa-lightbulb"></i>
+                </div>
+
+                <p>
+                    <strong>Study tip</strong>
+                    Explaining something to another person
+                    helps you understand it better.
+                </p>
+
+            </div>
+
+
+            <button class="logout-button"
+                    onclick="logoutUser()">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Logout
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <main class="app-main">
+
+        <header class="app-header">
+
+            <button class="mobile-menu"
+                    onclick="toggleSidebar()">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+            <div class="global-search">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input id="globalSearch"
+                       placeholder="Search buddies, groups, subjects..."
+                       oninput="globalSearch()">
+
+                <kbd>⌘ K</kbd>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <button class="header-icon"
+                        onclick="navigateApp('notifications')">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span id="notificationBadge">0</span>
+
+                </button>
+
+
+                <button class="header-user"
+                        onclick="navigateApp('profile')">
+
+                    <div class="user-avatar small"
+                         id="topAvatar">
+                        S
+                    </div>
+
+                    <div>
+                        <strong id="topName">Student</strong>
+                        <small>Student</small>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <div class="app-content">
+
+
+            <!-- DASHBOARD -->
+
+            <section id="dashboardPage" class="content-page">
+
+                <div class="welcome-banner">
+
+                    <div>
+
+                        <span id="todayLabel"></span>
+
+                        <h1>
+                            Hey, <span id="welcomeName">Student</span> 👋
+                        </h1>
+
+                        <p>
+                            Ready to make today's study session count?
+                        </p>
+
+                        <button class="btn btn-white"
+                                onclick="navigateApp('students')">
+
+                            Find a StudyBuddy
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="welcome-art">
+
+                        <div class="art-circle one"></div>
+                        <div class="art-circle two"></div>
+
+                        <i class="fa-solid fa-graduation-cap"></i>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-grid">
+
+                    <div class="stat-card purple-stat">
+
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-user-group"></i>
+                        </div>
+
+                        <div>
+                            <span>Study Buddies</span>
+                            <strong id="dashboardBuddyCount">0</strong>
+                            <small>students available</small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card blue-stat">
+
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-people-group"></i>
+                        </div>
+
+                        <div>
+                            <span>Study Groups</span>
+                            <strong id="dashboardGroupCount">0</strong>
+                            <small>groups created</small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card orange-stat">
+
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-fire"></i>
+                        </div>
+
+                        <div>
+                            <span>Study Streak</span>
+                            <strong id="dashboardStreak">7</strong>
+                            <small>days 🔥</small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card green-stat">
+
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+
+                        <div>
+                            <span>Study Time</span>
+                            <strong id="dashboardHours">0h</strong>
+                            <small>this month</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-grid">
+
+                    <div class="panel large-panel">
+
+                        <div class="panel-heading">
+
+                            <div>
+                                <span>CONNECT</span>
+                                <h2>Recommended Buddies</h2>
+                            </div>
+
+                            <button onclick="navigateApp('students')">
+                                View all
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+
+                        <div id="recommendedStudents"
+                             class="buddy-list">
+                        </div>
+
+                    </div>
+
+
+                    <div class="panel">
+
+                        <div class="panel-heading">
+
+                            <div>
+                                <span>YOUR PLAN</span>
+                                <h2>Upcoming Sessions</h2>
+                            </div>
+
+                            <button onclick="navigateApp('sessions')">
+                                View all
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+
+                        <div id="dashboardSessions"
+                             class="mini-session-list">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="panel groups-panel">
+
+                    <div class="panel-heading">
+
+                        <div>
+                            <span>COLLABORATE</span>
+                            <h2>Your Study Groups</h2>
+                        </div>
+
+                        <button onclick="navigateApp('groups')">
+                            Explore groups
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                    <div id="dashboardGroups"
+                         class="group-mini-grid">
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- STUDENTS -->
+
+            <section id="studentsPage"
+                     class="content-page hidden">
+
+                <div class="page-heading">
+
+                    <div>
+                        <span>CONNECT</span>
+                        <h1>Find Your StudyBuddy</h1>
+                        <p>
+                            Discover students who share your interests.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="filter-bar">
+
+                    <div class="search-control">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input id="studentSearch"
+                               placeholder="Search by name or email..."
+                               oninput="renderStudents()">
+
+                    </div>
+
+                    <select id="studentSubjectFilter"
+                            onchange="renderStudents()">
+
+                        <option value="all">All Subjects</option>
+                        <option>Java</option>
+                        <option>Python</option>
+                        <option>DBMS</option>
+                        <option>Data Structures</option>
+                        <option>Circuit Theory</option>
+
+                    </select>
+
+                </div>
+
+
+                <div id="allStudents"
+                     class="buddy-grid">
+                </div>
+
+            </section>
+
+
+            <!-- GROUPS -->
+
+            <section id="groupsPage"
+                     class="content-page hidden">
+
+                <div class="page-heading">
+
+                    <div>
+                        <span>COLLABORATE</span>
+                        <h1>Study Groups</h1>
+                        <p>
+                            Learn together with students who share your goals.
+                        </p>
+                    </div>
+
+                    <button class="btn btn-primary"
+                            onclick="openGroupModal()">
+
+                        <i class="fa-solid fa-plus"></i>
+                        Create Group
+
+                    </button>
+
+                </div>
+
+
+                <div class="filter-bar">
+
+                    <div class="search-control">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input id="groupSearch"
+                               placeholder="Search study groups..."
+                               oninput="renderGroups()">
+
+                    </div>
+
+                    <select id="groupSubjectFilter"
+                            onchange="renderGroups()">
+
+                        <option value="all">All Subjects</option>
+                        <option>Java</option>
+                        <option>Python</option>
+                        <option>DBMS</option>
+                        <option>Data Structures</option>
+                        <option>Circuit Theory</option>
+
+                    </select>
+
+                </div>
+
+
+                <div id="allGroups"
+                     class="group-grid">
+                </div>
+
+            </section>
+
+
+            <!-- SUBJECTS -->
+
+            <section id="subjectsPage"
+                     class="content-page hidden">
+
+                <div class="page-heading">
+
+                    <div>
+                        <span>EXPLORE</span>
+                        <h1>Subjects</h1>
+                        <p>
+                            Explore the subjects you want to master.
+                        </p>
+                    </div>
+
+                    <button class="btn btn-primary"
+                            onclick="openSubjectModal()">
+
+                        <i class="fa-solid fa-plus"></i>
+                        Add Subject
+
+                    </button>
+
+                </div>
+
+
+                <div id="subjectGrid"
+                     class="subject-grid">
+                </div>
+
+            </section>
+
+
+            <!-- SESSIONS -->
+
+            <section id="sessionsPage"
+                     class="content-page hidden">
+
+                <div class="page-heading">
+
+                    <div>
+                        <span>ORGANIZE</span>
+                        <h1>Study Sessions</h1>
+                        <p>
+                            Plan your next learning session.
+                        </p>
+                    </div>
+
+                    <button class="btn btn-primary"
+                            onclick="openSessionModal()">
+
+                        <i class="fa-solid fa-plus"></i>
+                        New Session
+
+                    </button>
+
+                </div>
+
+
+                <div class="calendar-layout">
+
+                    <div class="calendar-panel">
+
+                        <div class="calendar-header">
+
+                            <button onclick="changeMonth(-1)">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+
+                            <h2 id="calendarMonth">
+                                Month
+                            </h2>
+
+                            <button onclick="changeMonth(1)">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+
+                        </div>
+
+
+                        <div class="calendar-weekdays">
+
+                            <span>MON</span>
+                            <span>TUE</span>
+                            <span>WED</span>
+                            <span>THU</span>
+                            <span>FRI</span>
+                            <span>SAT</span>
+                            <span>SUN</span>
+
+                        </div>
+
+
+                        <div id="calendarGrid"
+                             class="calendar-grid">
+                        </div>
+
+                    </div>
+
+
+                    <div class="schedule-panel">
+
+                        <div class="schedule-title">
+                            <span>SELECTED DATE</span>
+                            <h2 id="selectedDate">
+                                Today
+                            </h2>
+                        </div>
+
+                        <div id="scheduleList"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- PROGRESS -->
+
+            <section id="progressPage"
+                     class="content-page hidden">
+
+                <div class="page-heading">
+
+                    <div>
+                        <span>YOUR JOURNEY</span>
+                        <h1>My Progress</h1>
+                        <p>
+                            See how your learning journey is growing.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="progress-cards">
+
+                    <div class="progress-card purple-stat">
+                        <i class="fa-solid fa-fire"></i>
+                        <span>Current Streak</span>
+                        <strong id="progressStreak">7 days</strong>
+                    </div>
+
+                    <div class="progress-card blue-stat">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Total Study Sessions</span>
+                        <strong id="progressSessions">0</strong>
+                    </div>
+
+                    <div class="progress-card orange-stat">
+                        <i class="fa-solid fa-people-group"></i>
+                        <span>Groups Joined</span>
+                        <strong id="progressGroups">0</strong>
+                    </div>
+
+                    <div class="progress-card green-stat">
+                        <i class="fa-solid fa-user-group"></i>
+                        <span>Buddies</span>
+                        <strong id="progressBuddies">0</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="progress-layout">
+
+                    <div class="panel">
+
+                        <div class="panel-heading">
+                            <div>
+                                <span>ACTIVITY</span>
+                                <h2>Learning Activity</h2>
+                            </div>
+                        </div>
+
+                        <div class="activity-chart"
+                             id="activityChart">
+                        </div>
+
+                    </div>
+
+
+                    <div class="panel goal-panel">
+
+                        <span>YOUR GOAL</span>
+
+                        <h2>Keep learning 🚀</h2>
+
+                        <p>
+                            Complete study sessions and
+                            maintain your streak.
+                        </p>
+
+                        <div class="goal-progress">
+                            <div id="goalProgressBar"></div>
+                        </div>
+
+                        <strong id="goalText">
+                            0 / 5 sessions
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- NOTIFICATIONS -->
+
+            <section id="notificationsPage"
+                     class="content-page hidden">
+
+                <div class="page-heading">
+
+                    <div>
+                        <span>STAY UPDATED</span>
+                        <h1>Notifications</h1>
+                        <p>
+                            Your latest StudyBuddy activity.
+                        </p>
+                    </div>
+
+                    <button class="btn btn-soft"
+                            onclick="markNotificationsRead()">
+                        Mark all read
+                    </button>
+
+                </div>
+
+
+                <div id="notificationsList"
+                     class="notification-list">
+                </div>
+
+            </section>
+
+
+            <!-- PROFILE -->
+
+            <section id="profilePage"
+                     class="content-page hidden">
+
+                <div class="page-heading">
+
+                    <div>
+                        <span>YOUR ACCOUNT</span>
+                        <h1>My Profile</h1>
+                        <p>
+                            Manage your StudyBuddy profile.
+                        </p>
+                    </div>
+
+                    <button class="btn btn-primary"
+                            onclick="editProfile()">
+
+                        <i class="fa-solid fa-pen"></i>
+                        Edit Profile
+
+                    </button>
+
+                </div>
+
+
+                <div class="profile-layout">
+
+                    <div class="profile-cover">
+
+                        <div class="profile-big-avatar"
+                             id="profileAvatar">
+                            S
+                        </div>
+
+                        <h2 id="profileName">
+                            Student
+                        </h2>
+
+                        <p id="profileEmail">
+                            student@email.com
+                        </p>
+
+                        <span class="student-pill">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            Student
+                        </span>
+
+                    </div>
+
+
+                    <div class="panel">
+
+                        <div class="panel-heading">
+
+                            <div>
+                                <span>ACCOUNT</span>
+                                <h2>Profile Information</h2>
+                            </div>
+
+                        </div>
+
+
+                        <div class="profile-info-grid">
+
+                            <div>
+                                <span>Full Name</span>
+                                <strong id="profileDetailName">
+                                    Student
+                                </strong>
+                            </div>
+
+                            <div>
+                                <span>Email</span>
+                                <strong id="profileDetailEmail">
+                                    student@email.com
+                                </strong>
+                            </div>
+
+                            <div>
+                                <span>Study Groups</span>
+                                <strong id="profileGroupCount">
+                                    0
+                                </strong>
+                            </div>
+
+                            <div>
+                                <span>Study Buddies</span>
+                                <strong id="profileBuddyCount">
+                                    0
+                                </strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<!-- =========================
+     GROUP MODAL
+========================= -->
+
+<div id="groupModal"
+     class="modal-overlay"
+     onclick="closeModalOutside(event,'groupModal')">
+
+    <div class="modal">
+
+        <button class="modal-close"
+                onclick="closeModal('groupModal')">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <span>CREATE</span>
+        <h2>Create Study Group</h2>
+
+        <p>
+            Bring students together around a common subject.
+        </p>
+
+
+        <form onsubmit="createGroup(event)">
+
+            <label>Group Name</label>
+
+            <input id="groupName"
+                   placeholder="Java Companions"
+                   required>
+
+
+            <label>Subject</label>
+
+            <select id="groupSubject" required>
+                <option value="">Select subject</option>
+                <option>Java</option>
+                <option>Python</option>
+                <option>DBMS</option>
+                <option>Data Structures</option>
+                <option>Circuit Theory</option>
+                <option>Digital Electronics</option>
+            </select>
+
+
+            <label>Description</label>
+
+            <textarea id="groupDescription"
+                      placeholder="What will your group study?"></textarea>
+
+
+            <label>Maximum Members</label>
+
+            <input id="groupMaxMembers"
+                   type="number"
+                   min="2"
+                   max="100"
+                   value="5"
+                   required>
+
+
+            <button class="btn btn-primary modal-submit">
+                Create Group
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- SUBJECT MODAL -->
+
+<div id="subjectModal"
+     class="modal-overlay"
+     onclick="closeModalOutside(event,'subjectModal')">
+
+    <div class="modal">
+
+        <button class="modal-close"
+                onclick="closeModal('subjectModal')">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <span>NEW SUBJECT</span>
+
+        <h2>Add Subject</h2>
+
+        <p>Add a subject to your learning space.</p>
+
+
+        <form onsubmit="createSubject(event)">
+
+            <label>Subject Name</label>
+
+            <input id="newSubjectName"
+                   placeholder="Machine Learning"
+                   required>
+
+
+            <label>Category</label>
+
+            <select id="newSubjectCategory">
+
+                <option>Programming</option>
+                <option>Computer Science</option>
+                <option>EEE</option>
+                <option>Electronics</option>
+                <option>Mathematics</option>
+                <option>Other</option>
+
+            </select>
+
+
+            <button class="btn btn-primary modal-submit">
+                Add Subject
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- SESSION MODAL -->
+
+<div id="sessionModal"
+     class="modal-overlay"
+     onclick="closeModalOutside(event,'sessionModal')">
+
+    <div class="modal">
+
+        <button class="modal-close"
+                onclick="closeModal('sessionModal')">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <span>PLAN</span>
+
+        <h2>New Study Session</h2>
+
+        <p>Plan your next focused learning session.</p>
+
+
+        <form onsubmit="createSession(event)">
+
+            <label>Session Title</label>
+
+            <input id="sessionTitle"
+                   placeholder="DBMS Revision"
+                   required>
+
+
+            <label>Subject</label>
+
+            <input id="sessionSubject"
+                   placeholder="DBMS"
+                   required>
+
+
+            <div class="form-two">
+
+                <div>
+                    <label>Date</label>
+
+                    <input id="sessionDate"
+                           type="date"
+                           required>
+                </div>
+
+                <div>
+                    <label>Time</label>
+
+                    <input id="sessionTime"
+                           type="time"
+                           required>
+                </div>
+
+            </div>
+
+
+            <label>Description</label>
+
+            <textarea id="sessionDescription"
+                      placeholder="What will you study?"></textarea>
+
+
+            <button class="btn btn-primary modal-submit">
+                Schedule Session
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
